@@ -40,3 +40,12 @@ Pusha för att få backup.
 
 ### Deployment
 1. Aktivera github pages under settings på ditt repo på github.com
+
+
+
+
+https://www.figma.com/file/lIMFYrIFQoowc2QftUQLYh/Untitled?node-id=0%3A1
+
+
+
+Tänkte göra en enklare hemsida för en fotograf. Tänkte ha en header med mycket whitespace och i main ska jag ha ett fotogalleri med en del bilder.
