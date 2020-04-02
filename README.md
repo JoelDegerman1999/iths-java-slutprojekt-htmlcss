@@ -49,3 +49,7 @@ https://www.figma.com/file/lIMFYrIFQoowc2QftUQLYh/Untitled?node-id=0%3A1
 
 
 Tänkte göra en enklare hemsida för en fotograf. Tänkte ha en header med mycket whitespace och i main ska jag ha ett fotogalleri med en del bilder.
+
+
+Todo lista
+https://imgur.com/a/9eMf94d
