@@ -43,7 +43,7 @@ Pusha för att få backup.
 
 
 
-
+Skisserna är inte final men något jag har att utgå ifrån
 https://www.figma.com/file/lIMFYrIFQoowc2QftUQLYh/Untitled?node-id=0%3A1
 
 
