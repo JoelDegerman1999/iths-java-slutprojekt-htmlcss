@@ -54,20 +54,10 @@ nav {
   justify-content: space-between; }
 
 nav ul {
-  position: fixed;
-  background-color: #d6d6d6;
-  right: 0;
-  height: 88vh;
-  top: 12vh;
-  width: 100%;
-  transform: translateX(100%);
-  transition: transform 0.5s ease; }
+  list-style: none;
+  width: 40%; }
   nav ul li {
-    width: 100%;
-    height: 100%;
     display: flex;
-    flex-direction: column;
-    align-items: center;
     justify-content: space-around; }
 
 header {
@@ -115,13 +105,14 @@ main {
     width: 90%;
     display: grid;
     grid-template-columns: 1fr;
+    grid-auto-rows: 350px;
     gap: 1rem; }
-
-img.gallery-img {
-  border-radius: 3px;
-  object-fit: cover;
-  width: 100%;
-  height: 100%; }
+    main section.gallery img.gallery-img {
+      border-radius: 3px;
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+      border: 1px solid rgba(0, 0, 0, 0.4); }
 
 footer {
   grid-area: footer;
@@ -144,26 +135,50 @@ div.burger div.line {
   border-radius: 2px; }
 
 @media screen and (min-width: 800px) {
+  nav div.burger {
+    display: none; }
   header p {
-    width: 40%; }
-  main section.gallery {
+    width: 50%; }
+  main.index-main section.gallery {
     width: 80%;
     margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-auto-rows: 250px;
-    gap: 2rem;
-    object-fit: cover; }
-  main p {
+    grid-auto-rows: 300px;
+    gap: 2rem; }
+  main.index-main p {
     width: 50%;
     text-align: center; }
-    main p:first-of-type {
+    main.index-main p:first-of-type {
       margin: 0.1rem 0 0.4rem 0; }
   main.about-me-main {
-    flex-direction: column; }
+    flex-direction: column;
+    width: 60%;
+    margin: 0 auto; }
+    main.about-me-main p:nth-child(4) {
+      margin-top: 0.5rem; }
   main.contact-main {
+    flex-direction: row;
     padding: 1rem 5rem;
     justify-content: space-around; }
     main.contact-main img.portrait {
       display: block;
       width: 400px; } }
+
+@media screen and (max-width: 799px) {
+  nav ul {
+    position: fixed;
+    background-color: #d6d6d6;
+    right: 0;
+    height: 88vh;
+    top: 12vh;
+    width: 100%;
+    transform: translateX(100%);
+    transition: transform 0.5s ease; }
+    nav ul li {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around; } }
