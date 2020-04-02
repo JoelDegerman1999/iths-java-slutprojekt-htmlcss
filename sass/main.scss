@@ -178,6 +178,10 @@ div.burger div.line {
     }
   }
 
+  main.about-me-main {
+    flex-direction: column;
+  }
+
   main.contact-main {
     padding: 1rem 5rem;
     justify-content: space-around;

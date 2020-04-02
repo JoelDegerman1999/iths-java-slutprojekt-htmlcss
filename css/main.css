@@ -158,6 +158,8 @@ div.burger div.line {
     text-align: center; }
     main p:first-of-type {
       margin: 0.1rem 0 0.4rem 0; }
+  main.about-me-main {
+    flex-direction: column; }
   main.contact-main {
     padding: 1rem 5rem;
     justify-content: space-around; }
