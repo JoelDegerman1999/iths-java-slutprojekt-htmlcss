@@ -25,6 +25,15 @@ a {
 p {
   line-height: 1.6rem; }
 
+a {
+  color: black;
+  transition: color 0.4s ease; }
+  a:hover {
+    color: coral; }
+
+a.logo {
+  color: black; }
+
 .portrait {
   display: none; }
 
@@ -97,9 +106,10 @@ main {
       margin-top: 0.5rem; }
   main p {
     width: 90%;
-    text-align: center; }
+    text-align: center;
+    margin-top: 0.5rem; }
     main p:first-of-type {
-      margin: 0.1rem 0 0.4rem 0; }
+      margin: 0.1rem 0 0 0; }
   main section.gallery {
     margin: 0 auto;
     width: 90%;

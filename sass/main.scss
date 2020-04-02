@@ -6,6 +6,18 @@
   align-items: center;
 }
 
+a {
+  color: black;
+  transition: color 0.4s ease;
+  &:hover {
+    color: coral;
+  }
+}
+
+a.logo {
+  color: black;
+}
+
 .portrait {
   display: none;
 }
