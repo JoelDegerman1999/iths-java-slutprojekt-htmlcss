@@ -239,12 +239,19 @@ div.burger div.line {
     margin: 0 auto;
     flex-direction: column;
 
+
+    form {
+      
+      width: 50%;
+    }
+
     img.mountain {
       display: block;
       width: 400px;
       border-radius: 2px;
       margin-bottom: 1rem;
     }
+
   }
 
 }

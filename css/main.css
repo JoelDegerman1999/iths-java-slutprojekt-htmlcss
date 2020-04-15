@@ -194,6 +194,8 @@ div.burger div.line {
     width: 60%;
     margin: 0 auto;
     flex-direction: column; }
+    main.contact-main form {
+      width: 50%; }
     main.contact-main img.mountain {
       display: block;
       width: 400px;
