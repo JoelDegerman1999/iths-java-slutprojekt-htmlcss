@@ -37,14 +37,6 @@ a.logo {
 img.mountain {
   display: none; }
 
-/*Helper classes for my burgermenu*/
-.nav-active {
-  transform: translateX(0); }
-
-.overflow-hidden {
-  overflow: hidden; }
-
-/*-------*/
 div.grid-container {
   display: grid;
   grid-auto-rows: 12vh auto minmax(300px, auto) minmax(300px, auto);
@@ -139,13 +131,18 @@ main.contact-main {
       border-radius: 5px;
       margin-top: 0.5rem; }
     main.contact-main form button {
+      cursor: pointer;
       width: 40%;
       height: 2rem;
       align-self: flex-end;
       border: solid 1px gray;
       background-color: lightgray;
       border-radius: 5px;
-      margin-top: 1rem; }
+      margin-top: 1rem;
+      outline: none;
+      transition: background-color 1s ease; }
+      main.contact-main form button:hover {
+        background-color: #a0a0a0; }
 
 footer {
   grid-area: footer;
@@ -171,7 +168,7 @@ div.burger div.line {
   nav div.burger {
     display: none; }
   header p {
-    width: 50%; }
+    width: 30%; }
   main.index-main section.gallery {
     width: 80%;
     margin: 0 auto;
@@ -184,9 +181,15 @@ div.burger div.line {
     text-align: center; }
     main.index-main p:first-of-type {
       margin: 0.1rem 0 0.4rem 0; }
+  section.gallery figure {
+    overflow: hidden; }
+  section.gallery img.gallery-img {
+    transition: transform 1s ease; }
+    section.gallery img.gallery-img:hover {
+      transform: scale(1.5) rotate(25deg); }
   main.about-me-main {
     flex-direction: column;
-    width: 60%;
+    width: 50%;
     margin: 0 auto; }
     main.about-me-main p:nth-child(4) {
       margin-top: 0.5rem; }
@@ -201,6 +204,12 @@ div.burger div.line {
       width: 400px;
       border-radius: 2px;
       margin-bottom: 1rem; } }
+
+.nav-active {
+  transform: translateX(0); }
+
+.overflow-hidden {
+  overflow: hidden; }
 
 @media screen and (max-width: 799px) {
   nav ul {

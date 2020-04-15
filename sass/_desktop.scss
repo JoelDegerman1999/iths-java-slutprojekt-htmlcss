@@ -1,0 +1,68 @@
+@media screen and (min-width: 800px) {
+  nav {
+    div.burger {
+      display: none;
+    }
+  }
+  header {
+    p {
+      width: 30%;
+    }
+  }
+  main.index-main {
+    section.gallery {
+      width: 80%;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-auto-rows: 300px;
+      gap: 2rem;
+    }
+
+    p {
+      width: 50%;
+      text-align: center;
+      &:first-of-type {
+        margin: 0.1rem 0 0.4rem 0;
+      }
+    }
+  }
+  section.gallery {
+    figure {
+      overflow: hidden;
+    }
+    img.gallery-img {
+      transition: transform 1s ease;
+      &:hover {
+        transform: scale(1.5) rotate(25deg);
+      }
+    }
+  }
+
+  main.about-me-main {
+    flex-direction: column;
+    width: 50%;
+    margin: 0 auto;
+
+    p:nth-child(4) {
+      margin-top: 0.5rem;
+    }
+  }
+
+  main.contact-main {
+    width: 60%;
+    margin: 0 auto;
+    flex-direction: column;
+
+    form {
+      width: 50%;
+    }
+
+    img.mountain {
+      display: block;
+      width: 400px;
+      border-radius: 2px;
+      margin-bottom: 1rem;
+    }
+  }
+}
