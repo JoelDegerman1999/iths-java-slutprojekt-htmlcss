@@ -34,7 +34,7 @@ a {
 a.logo {
   color: black; }
 
-.portrait {
+img.mountain {
   display: none; }
 
 /*Helper classes for my burgermenu*/
@@ -114,36 +114,38 @@ main.index-main section.gallery {
 main.about-me-main {
   width: 95%;
   margin: 0 auto; }
-  main.about-me-main p:first-of-type {
-    margin-top: 0;
-    line-height: 1.1rem; }
   main.about-me-main p {
     margin-top: 0.5rem; }
 
-main.contact-main form {
-  width: 80%;
-  margin: 0 auto;
-  display: flex;
+main.contact-main {
   flex-direction: column; }
-  main.contact-main form input {
-    height: 1.6rem;
-    border: solid 1px gray;
-    background-color: lightgray;
-    border-radius: 5px;
-    margin: 0.5rem 0; }
-  main.contact-main form textarea {
-    border: solid 1px gray;
-    background-color: lightgray;
-    border-radius: 5px;
-    margin-top: 0.5rem; }
-  main.contact-main form button {
-    width: 40%;
-    height: 2rem;
-    align-self: flex-end;
-    border: solid 1px gray;
-    background-color: lightgray;
-    border-radius: 5px;
-    margin-top: 1rem; }
+  main.contact-main h1 {
+    font-weight: 300;
+    margin-bottom: 1rem; }
+  main.contact-main form {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column; }
+    main.contact-main form input {
+      height: 1.6rem;
+      border: solid 1px gray;
+      background-color: lightgray;
+      border-radius: 5px;
+      margin: 0.5rem 0; }
+    main.contact-main form textarea {
+      border: solid 1px gray;
+      background-color: lightgray;
+      border-radius: 5px;
+      margin-top: 0.5rem; }
+    main.contact-main form button {
+      width: 40%;
+      height: 2rem;
+      align-self: flex-end;
+      border: solid 1px gray;
+      background-color: lightgray;
+      border-radius: 5px;
+      margin-top: 1rem; }
 
 footer {
   grid-area: footer;
@@ -192,7 +194,7 @@ div.burger div.line {
     width: 60%;
     margin: 0 auto;
     flex-direction: column; }
-    main.contact-main img.portrait {
+    main.contact-main img.mountain {
       display: block;
       width: 400px;
       border-radius: 2px;

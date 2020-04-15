@@ -9,6 +9,7 @@
 a {
   color: black;
   transition: color 0.15s ease;
+  
   &:hover {
     color: coral;
   }
@@ -18,7 +19,7 @@ a.logo {
   color: black;
 }
 
-.portrait {
+img.mountain {
   display: none;
 }
 
@@ -54,6 +55,7 @@ nav {
   ul {
     list-style: none;
     width: 40%;
+
     li {
       display: flex;
       justify-content: space-around;
@@ -89,6 +91,7 @@ main.index-main {
   p {
     width: 90%;
     text-align: center;
+
     &:first-of-type {
       margin: 0.1rem 0 0 0;
     }
@@ -102,6 +105,7 @@ main.index-main {
     grid-template-columns: 1fr;
     grid-auto-rows: 350px;
     gap: 1rem;
+
     img.gallery-img {
       border-radius: 3px;
       object-fit: cover;
@@ -115,11 +119,6 @@ main.index-main {
 main.about-me-main {
   width: 95%;
   margin: 0 auto;
-
-  p:first-of-type{
-    margin-top: 0;
-    line-height: 1.1rem;
-  }
   p {
     margin-top: 0.5rem;
   }
@@ -127,11 +126,19 @@ main.about-me-main {
 }
 
 main.contact-main {
+  flex-direction: column;
+
+  h1 {
+    font-weight: 300;
+    margin-bottom: 1rem;
+  }
+
   form {
     width: 80%;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
+
     input {
       height: 1.6rem;
       border: solid 1px gray;
@@ -139,6 +146,7 @@ main.contact-main {
       border-radius: 5px;
       margin: 0.5rem 0;
     }
+
     textarea {
       border: solid 1px gray;
       background-color: lightgray;
@@ -161,11 +169,13 @@ main.contact-main {
 footer {
   grid-area: footer;
   background-color: lightgray;
+
   section.take-me-up {
     padding: 0.8rem;
     @include flex-content-center();
     flex-direction: column;
     background-color: gray;
+
     h3 {
       font-weight: 500;
     }
@@ -182,16 +192,19 @@ div.burger div.line {
 
 @media screen and (min-width: 800px) {
   nav {
+
     div.burger {
       display: none;
     }
   }
   header {
+
     p {
       width: 50%;
     }
   }
   main.index-main {
+
     section.gallery {
       width: 80%;
       margin: 0 auto;
@@ -200,6 +213,7 @@ div.burger div.line {
       grid-auto-rows: 300px;
       gap: 2rem;
     }
+
     p {
       width: 50%;
       text-align: center;
@@ -213,6 +227,7 @@ div.burger div.line {
     flex-direction: column;
     width: 60%;
     margin: 0 auto;
+
     p:nth-child(4) {
       margin-top: 0.5rem;
     }
@@ -223,7 +238,8 @@ div.burger div.line {
     width: 60%;
     margin: 0 auto;
     flex-direction: column;
-    img.portrait {
+
+    img.mountain {
       display: block;
       width: 400px;
       border-radius: 2px;
@@ -235,6 +251,7 @@ div.burger div.line {
 
 @media screen and (max-width: 799px) {
   nav {
+
     ul {
       position: fixed;
       background-color: #d6d6d6;
