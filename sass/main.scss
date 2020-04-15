@@ -8,7 +8,7 @@
 
 a {
   color: black;
-  transition: color 0.4s ease;
+  transition: color 0.15s ease;
   &:hover {
     color: coral;
   }
@@ -23,13 +23,8 @@ a.logo {
 }
 
 /*Helper classes for my burgermenu*/
-.nav-active {
-  transform: translateX(0);
-}
 
-.overflow-hidden {
-  overflow: hidden;
-}
+@import "_burger.scss";
 
 /*-------*/
 
@@ -55,9 +50,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-}
 
-nav {
   ul {
     list-style: none;
     width: 40%;
@@ -67,6 +60,7 @@ nav {
     }
   }
 }
+
 
 header {
   @include flex-content-center;
@@ -85,30 +79,13 @@ header {
 }
 
 main {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  @include flex-content-center();
   grid-area: main;
   padding: 1rem 0;
+  text-align: center;
+}
 
-  form {
-    display: flex;
-    flex-direction: column;
-    input {
-      height: 1.6rem;
-      border: solid 1px gray;
-      background-color: lightgray;
-      border-radius: 5px;
-      margin: 0.5rem 0;
-    }
-    textarea {
-      border: solid 1px gray;
-      background-color: lightgray;
-      border-radius: 5px;
-      margin-top: 0.5rem;
-    }
-  }
+main.index-main {
   p {
     width: 90%;
     text-align: center;
@@ -131,6 +108,52 @@ main {
       width: 100%;
       height: 100%;
       border: 1px solid rgba($color: black, $alpha: 0.4);
+    }
+  }
+}
+
+main.about-me-main {
+  width: 95%;
+  margin: 0 auto;
+
+  p:first-of-type{
+    margin-top: 0;
+    line-height: 1.1rem;
+  }
+  p {
+    margin-top: 0.5rem;
+  }
+
+}
+
+main.contact-main {
+  form {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    input {
+      height: 1.6rem;
+      border: solid 1px gray;
+      background-color: lightgray;
+      border-radius: 5px;
+      margin: 0.5rem 0;
+    }
+    textarea {
+      border: solid 1px gray;
+      background-color: lightgray;
+      border-radius: 5px;
+      margin-top: 0.5rem;
+    }
+
+    button {
+      width: 40%;
+      height: 2rem;
+      align-self: flex-end;
+      border: solid 1px gray;
+      background-color: lightgray;
+      border-radius: 5px;
+      margin-top: 1rem;
     }
   }
 }
@@ -193,17 +216,21 @@ div.burger div.line {
     p:nth-child(4) {
       margin-top: 0.5rem;
     }
+
   }
 
   main.contact-main {
-    flex-direction: row;
-    padding: 1rem 5rem;
-    justify-content: space-around;
+    width: 60%;
+    margin: 0 auto;
+    flex-direction: column;
     img.portrait {
       display: block;
       width: 400px;
+      border-radius: 2px;
+      margin-bottom: 1rem;
     }
   }
+
 }
 
 @media screen and (max-width: 799px) {
